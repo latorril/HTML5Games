@@ -1,0 +1,478 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stage",
+				"stageWidth"
+			],
+			[
+				"expor",
+				"exportDoc"
+			],
+			[
+				"layoutInd",
+				"layoutIndices"
+			],
+			[
+				"exportData",
+				"exportDataArray"
+			],
+			[
+				"exportD",
+				"exportIndex"
+			],
+			[
+				"exportDa",
+				"exportDataArray"
+			],
+			[
+				"layout",
+				"layoutIndex"
+			],
+			[
+				"layoutIn",
+				"layoutIndices"
+			],
+			[
+				"libra",
+				"libraryItem"
+			],
+			[
+				"return",
+				"returnArray"
+			],
+			[
+				"sel",
+				"selArray"
+			],
+			[
+				"li",
+				"libraryItem"
+			],
+			[
+				"time",
+				"timeline"
+			],
+			[
+				"de",
+				"defaultLocation"
+			],
+			[
+				"uri",
+				"uri"
+			],
+			[
+				"expo",
+				"exportScales"
+			],
+			[
+				"get",
+				"getScalesFromDocument"
+			],
+			[
+				"cb",
+				"cbSize2"
+			],
+			[
+				"canvas",
+				"canvasLayer"
+			],
+			[
+				"select",
+				"selection"
+			],
+			[
+				"selected",
+				"selectedInstance"
+			],
+			[
+				"trac",
+				"traceIndex"
+			],
+			[
+				"trace",
+				"traceArray"
+			],
+			[
+				"base",
+				"baseURI"
+			],
+			[
+				"out",
+				"outputPanel"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/torri/Documents/www/HTML5Games/README.md",
+			"settings":
+			{
+				"buffer_size": 55,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/torri/Documents/www/PhaserExperiments/index.html",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/assets/source/lumos module.fla",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/jsfl/libraries/framework/Module.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_snippets/asset_exporter.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/Image.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/Motion.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/Flipbook.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/jsfl/libraries/file/Folder.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/Layout.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/assets/source/classes/FlipbookPanel.as",
+		"/Users/torri/Desktop/Flipbook.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/jsfl/lumos.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/assets/source/classes/MotionPanel.as",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/ExportUtil.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/manifest.xml",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/flash/WindowSWF/Lumos Module.swf",
+		"/Users/torri/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/torri/Desktop/FlashValidator-edit.jsfl",
+		"/Users/torri/Desktop/FlashValidator-edit-2.jsfl",
+		"/Users/torri/Desktop/FlashValidator.jsfl",
+		"/Users/torri/Desktop/FlashValidator-split.jsfl",
+		"/Users/torri/workspace/LumosityMobileRawAssets/Shared/Game/Shared/shared_animations.fla",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/user/jsfl/snippets/Development/Tools/Inspect built-in object.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/jsfl/libraries/flash/JSFLInterface.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/install/flash/Tools/xJSFL Loader.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/jsfl/libraries/file/File.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/xJSFL/core/as3/lib/com/xjsfl/jsfl/io/JSFL.as",
+		"/Users/torri/Desktop/Exporter Experiments/Images/output.txt",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_libraries/AssetExport.jsfl",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/assets/source/classes/LumosModule.as",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/assets/source/classes/Document.as",
+		"/Users/torri/workspace/lumos_xjsfl/lumos_module/config/sample.xml",
+		"/Users/torri/Python/myTest/test.ui"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/torri/workspace/lumos_xjsfl",
+			"/Users/torri/workspace/lumos_xjsfl/xJSFL",
+			"/Users/torri/workspace/lumos_xjsfl",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"suffix",
+			"frames",
+			"suffix",
+			"findExportName",
+			"2",
+			"getExportOptions",
+			"stage",
+			"scale",
+			"stage",
+			"findExportName",
+			"libraryPath",
+			"exportName",
+			"pngName",
+			"name",
+			".tidy",
+			"img",
+			"_getLayoutFrameIndices",
+			"_getAnimationsLayerIndex",
+			"getLayoutData",
+			"_getLayoutFrame",
+			"_getLayoutFrameIndices",
+			"FRAME_NAME_LAYOUT",
+			"_addTextData",
+			"flipbook return true",
+			"trace",
+			"_uniqueItemArray",
+			"isTimelineExportable",
+			"onAssetSelectionChange",
+			"isTimelineExportable",
+			"onSelectionChanged",
+			"cmbAssetSelection",
+			"selected",
+			"setAssetExport",
+			"cmbAss",
+			"enable",
+			"lm",
+			"enabled",
+			"scale",
+			"test",
+			"enabled",
+			"disable",
+			"disables",
+			"layout",
+			"btnExportAsset",
+			"scale",
+			"<<<",
+			"scale",
+			"btn",
+			"trace",
+			"LumosityMobile",
+			"btn",
+			"btnTest",
+			"test",
+			"trace",
+			"spec",
+			"doexport",
+			"scales",
+			"define",
+			"getscalesfromDocument",
+			" name ",
+			" path ",
+			" item ",
+			"item ",
+			"item",
+			"scale 2",
+			"scale",
+			"spec",
+			"scales",
+			"getscales",
+			"get",
+			"start",
+			"options",
+			"option",
+			"first",
+			"getscales",
+			"that",
+			"move",
+			"scale",
+			"doexport",
+			"getscalesfrom",
+			"scales",
+			"8",
+			"7",
+			"5",
+			"trace",
+			"args",
+			"exportPngs",
+			"that",
+			"spec",
+			"fromDocument",
+			"getscales",
+			"scales",
+			"getscales",
+			"getscalesfrom",
+			" scales",
+			" scaleIndex",
+			" scales",
+			" scales ",
+			"scales ",
+			"scales",
+			"getscales",
+			"doexport",
+			"assetExport",
+			"module",
+			"scale",
+			"dimen",
+			"//TORRI",
+			"TORRI",
+			"exportscales",
+			"exportable",
+			"spec",
+			"exportAsset",
+			"exportable",
+			"getScalesFromDocument",
+			"exportPngs",
+			"_exportPngs",
+			"exportScales",
+			"getScalesFromDocument",
+			"spec",
+			"doExport",
+			"size",
+			"torri",
+			"size",
+			"exportasset",
+			"exportAsset",
+			"shortName",
+			"name",
+			"choosefolder"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"resolution",
+			"libraryPath",
+			"defineScale"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/torri/Documents/www/HTML5Games/README.md",
+					"settings":
+					{
+						"buffer_size": 55,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.533637403408,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"llutil",
+				"lumos_libraries/LLUtility.jsfl"
+			],
+			[
+				"flip",
+				"lumos_module/assets/source/classes/FlipbookPanel.as"
+			],
+			[
+				"",
+				"lumos_libraries/Image.jsfl"
+			],
+			[
+				"mod",
+				"xJSFL/core/jsfl/libraries/framework/Module.jsfl"
+			],
+			[
+				"lumos",
+				"lumos_module/jsfl/lumos.jsfl"
+			],
+			[
+				"llut",
+				"lumos_libraries/LLUtility.jsfl"
+			],
+			[
+				"flipbookp",
+				"lumos_module/assets/source/classes/FlipbookPanel.as"
+			],
+			[
+				"folde",
+				"xJSFL/core/jsfl/libraries/file/Folder.jsfl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true
+}
