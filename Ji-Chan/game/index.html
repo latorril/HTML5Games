@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>hello phaser!</title>
+    <script src="phaser.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="gameContainer">
+<script type="text/javascript">
+
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update },true,true);
+        
+function preload () {
+
+    game.load.image('tile', 'assets/tiles/1x1/up/1.png');
+    game.load.image('tile-down', 'assets/tiles/1x1/down/1-success.png');
+    game.load.image('dropzone', 'assets/dropzones/1x1/deep.png');
+
+
+}
+
+var cursors;
+var dropzone;
+var tile;
+
+function create () {
+
+    dropzone = game.add.sprite(game.world.centerX, (game.world.centerY / 4), 'dropzone');
+    tile = game.add.sprite(game.world.centerX, game.world.centerY, 'tile');
+    
+
+    tile.anchor.setTo(0.5, 0.5);
+    //tile.body.gravity.y = 0;
+    tile.inputEnabled = true;
+    tile.input.enableDrag(true);
+
+    dropzone.anchor.setTo(0.5, 0.5);
+    //dropzone.body.setSize(25, 25, 10, 10);
+
+
+    cursors = game.input.keyboard.createCursorKeys();
+}
+
+function update () {
+    //game.input.mousePointer.x;
+    /*if(game.physics.overlap(tile, dropzone)){
+        tile.inputEnabled = false;
+        tile.x = dropzone.x;
+        tile.y = dropzone.y;
+        tile.loadTexture('tile-down', 0);
+        dropzone.destroy();
+    }*/
+     if (game.input.pointer1.isDown){
+        //console.log();
+        tile.x = pointer1.position.x;
+        tile.y = pointer1.position.y;
+
+     }
+
+    if(game.physics.overlap(tile, dropzone)){
+        tile.inputEnabled = false;
+        tile.x = dropzone.x;
+        tile.y = dropzone.y;
+        tile.loadTexture('tile-down', 0);
+        dropzone.destroy();
+    }
+    //tile.body.velocity.y = 0;
+}
+
+    </script>
+</div>
+</body>
+</html>

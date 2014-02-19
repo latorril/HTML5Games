@@ -1,0 +1,16 @@
+body {
+	background-image: url('assets/backgrounds/wood-pattern.png');
+	text-align: center;
+	min-width: 740px;
+	padding: 0;
+	margin: 0;
+ }
+
+ #gameContainer {
+ 	border: 1px solid teal;
+	text-align: left;
+	width: 740px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+ }
