@@ -11,8 +11,9 @@
 <div id="gameContainer">
 <script type="text/javascript">
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update },true,true);
-        
+var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update },true,true);
+     
+
 function preload () {
 
     game.load.image('tile', 'assets/tiles/1x1/up/1.png');
@@ -69,6 +70,21 @@ function update () {
         dropzone.destroy();
     }
     //tile.body.velocity.y = 0;
+}
+
+function resizeGame() {
+var height = $(window).height();
+var width = $(window).width();
+    
+game.width = width;
+game.height = height;
+game.stage.bounds.width = width;
+game.stage.bounds.height = height;
+    
+if (game.renderType === Phaser.WEBGL)
+{
+    game.renderer.resize(width, height);
+}
 }
 
     </script>

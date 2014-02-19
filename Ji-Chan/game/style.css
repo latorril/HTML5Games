@@ -7,9 +7,8 @@ body {
  }
 
  #gameContainer {
- 	border: 1px solid teal;
+ 	border: 1px solid orange;
 	text-align: left;
-	width: 740px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
