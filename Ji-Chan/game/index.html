@@ -45,7 +45,7 @@ function create () {
 }
 
 function update () {
-    
+    var pointerInput = game.input.pointer1;
     //game.input.mousePointer.x;
     /*if(game.physics.overlap(tile, dropzone)){
         tile.inputEnabled = false;
@@ -54,10 +54,10 @@ function update () {
         tile.loadTexture('tile-down', 0);
         dropzone.destroy();
     }*/
-     if (game.input.pointer1.isDown){
+     if (pointerInput.isDown && tile.inputEnabled){
         //console.log();
-        tile.x = game.input.pointer1.x;
-        tile.y = game.input.pointer1.y;
+        tile.x = pointerInput.x;
+        tile.y = pointerInput.y;
 
      }
 
