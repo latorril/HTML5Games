@@ -11,8 +11,11 @@
 <div id="gameContainer">
 <script type="text/javascript">
 
-var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update },true,true);
-     
+//create the game - size is initially 640x960
+var game = new Phaser.Game(640, 960, Phaser.AUTO, 'gameContainer', { preload: preload, create: create, update: update },true,true);
+
+//resize your window to see the stage resize too
+game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL; 
 
 function preload () {
 
@@ -31,7 +34,7 @@ function create () {
 
     dropzone = game.add.sprite(game.world.centerX, (game.world.centerY / 4), 'dropzone');
     tile = game.add.sprite(game.world.centerX, game.world.centerY, 'tile');
-    
+    console.log(game.world.width);
 
     tile.anchor.setTo(0.5, 0.5);
     //tile.body.gravity.y = 0;
@@ -46,6 +49,7 @@ function create () {
 }
 
 function update () {
+    resizeGame();
     var pointerInput = game.input.pointer1;
     //game.input.mousePointer.x;
     /*if(game.physics.overlap(tile, dropzone)){
@@ -73,18 +77,8 @@ function update () {
 }
 
 function resizeGame() {
-var height = $(window).height();
-var width = $(window).width();
-    
-game.width = width;
-game.height = height;
-game.stage.bounds.width = width;
-game.stage.bounds.height = height;
-    
-if (game.renderType === Phaser.WEBGL)
-{
-    game.renderer.resize(width, height);
-}
+    game.stage.scale.setShowAll();
+    game.stage.scale.refresh();
 }
 
     </script>
