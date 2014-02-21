@@ -24,6 +24,8 @@
 
 //game.input.onDown.add(doSomething, this);
 
+//game.input.onDown.addOnce(playSound, this);
+
 ////////////////////////////////////////////////////////
 
 //create the game - size is initially 640x960
@@ -64,16 +66,18 @@ function create () {
 
     cursors = game.input.keyboard.createCursorKeys();
     //tile.input.startDrag.add(soundCheck, this);
+
+    //add events
+    tile.events.onDragStart.add(tileDrag,this);
 }
 
 function update () {
 
     resizeGame();
+    
     var pointerInput = game.input.pointer1;
 
     if (tile.input.isDragged){
-        //audio_tileIn.play();
-        game.input.onDown.addOnce(playSound, this);
         tile.scale.setTo(1.15, 1.15);
      }
      else tile.scale.setTo(1,1);
@@ -89,7 +93,7 @@ function update () {
     }
 }
 
-function playSound(){
+function tileDrag(){
     audio_tilePickup.play();
 }
 
