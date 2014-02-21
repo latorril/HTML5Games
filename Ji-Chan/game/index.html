@@ -73,10 +73,13 @@ function update () {
 
     if (tile.input.isDragged){
         //audio_tileIn.play();
-        game.input.onDown.addOnce(soundCheck, this);
+        game.input.onDown.addOnce(playSound, this);
+        tile.scale.setTo(1.15, 1.15);
      }
+     else tile.scale.setTo(1,1);
 
     if(game.physics.overlap(tile, dropzone)){
+        tile.input.stopDrag(pointerInput);
         audio_tileIn.play();
         tile.inputEnabled = false;
         tile.x = dropzone.x;
@@ -86,7 +89,7 @@ function update () {
     }
 }
 
-function soundCheck(){
+function playSound(){
     audio_tilePickup.play();
 }
 
