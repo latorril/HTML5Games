@@ -57,7 +57,8 @@ function create () {
     //tile.input.pixelPerfectAlpha = true;
     tile.input.pixelPerfectAlpha = 1;
     tile.input.useHandCursor = true;
-    tile.input.enableDrag(true);
+    tile.input.enableDrag(false, true);
+    //tile.input.snapOnDrag = false;
 
     dropzone.anchor.setTo(0.5, 0.5);
     //dropzone.body.setSize(25, 25, 10, 10);
