@@ -26,6 +26,10 @@
 
 //game.input.onDown.addOnce(playSound, this);
 
+//tile.input.stopDrag(game.input.activePointer);
+
+//game.input.activePointer.withinGame
+
 ////////////////////////////////////////////////////////
 
 //create the game - size is initially 640x960
@@ -45,8 +49,11 @@ function preload () {
 var cursors;
 var dropzone;
 var tile;
+var worldBounds;
+var pointerInput;
 
 function create () {
+    worldBounds = game.world.bounds;
 
     dropzone = game.add.sprite(game.world.centerX, (game.world.centerY / 4), 'dropzone');
     tile = game.add.sprite(game.world.centerX, game.world.centerY, 'tile');
@@ -58,25 +65,31 @@ function create () {
     tile.input.pixelPerfectAlpha = 1;
     tile.input.useHandCursor = true;
     tile.input.enableDrag(false, true);
+
     //tile.input.snapOnDrag = false;
 
     dropzone.anchor.setTo(0.5, 0.5);
+    dropzone.bounds.height = dropzone.bounds.height/2;
+    dropzone.bounds.width = dropzone.bounds.width/2;
     //dropzone.body.setSize(25, 25, 10, 10);
     audio_tileIn = game.add.audio('tile-in');
     audio_tilePickup = game.add.audio('tile-pickup');
 
     cursors = game.input.keyboard.createCursorKeys();
-    //tile.input.startDrag.add(soundCheck, this);
 
     //add events
     tile.events.onDragStart.add(tileDrag,this);
+    tile.events.onOutOfBounds.add(tileOutOfBounds, this);
+    //tile.events.onOutOfBounds.add(tileOutOfBounds, this);
 }
 
 function update () {
 
     resizeGame();
-    
-    var pointerInput = game.input.pointer1;
+
+    //console.log(game.input.activePointer.withinGame);
+
+    pointerInput = game.input.pointer1;
 
     if (tile.input.isDragged){
         tile.scale.setTo(1.15, 1.15);
@@ -95,7 +108,24 @@ function update () {
 }
 
 function tileDrag(){
+    console.log(tile);
+    console.log(game.input);
+    console.log(game);
+    console.log(game.world.bounds.left);
+
     audio_tilePickup.play();
+}
+
+function tileOutOfBounds(){
+    lastPointerX = game.input.activePointer.positionDown.x;
+    lastPointerY = game.input.activePointer.positionDown.y;
+    snapToPosition(tile,lastPointerX, lastPointerY);
+    tile.input.stopDrag(game.input.activePointer);
+}
+
+function snapToPosition(item, itemX, itemY){
+    item.x = itemX;
+    item.y = itemY;
 }
 
 function resizeGame() {
