@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Ji-Chan</title>
-    <script src="phaser.min.js"></script>
+    <script src="phaser.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -65,6 +65,7 @@ function create () {
     tile.input.pixelPerfectAlpha = 1;
     tile.input.useHandCursor = true;
     tile.input.enableDrag(false, true);
+    tile.inWorldThreshold = 1000;
 
     //tile.input.snapOnDrag = false;
 
@@ -79,11 +80,13 @@ function create () {
 
     //add events
     tile.events.onDragStart.add(tileDrag,this);
-    tile.events.onOutOfBounds.add(tileOutOfBounds, this);
+    //tile.events.onOutOfBounds.add(tileOutOfBounds, this);
     //tile.events.onOutOfBounds.add(tileOutOfBounds, this);
 }
 
 function update () {
+
+    console.log(tile.inWorld);
 
     resizeGame();
 
