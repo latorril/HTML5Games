@@ -28987,14 +28987,16 @@ Phaser.Rectangle.intersection = function (a, b, out) {
 * @param {Phaser.Rectangle} b - The second Rectangle object.
 * @return {boolean} A value of true if the specified object intersects with this Rectangle object; otherwise false.
 */
-Phaser.Rectangle.intersects = function (a, b) {
+Phaser.Rectangle.intersects = function (a, b, tolerance) {
+
+    if (typeof tolerance === "undefined") { tolerance = 0; console.log('NO TOLERANCE') }
 
     if (a.width <= 0 || a.height <= 0 || b.width <= 0 || b.height <= 0)
     {
         return false;
     }
 
-    return !(a.right < b.x || a.bottom < b.y || a.x > b.right || a.y > b.bottom);
+    return !(a.right < b.x - tolerance || a.bottom < b.y - tolerance || a.x > b.right + tolerance || a.y > b.bottom + tolerance);
 
 };
 
